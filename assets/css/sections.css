@@ -80,6 +80,7 @@
     position: relative;
     background-color: #ffffff;
     padding-block: clamp(4rem, 8vw, 7rem);
+    border-top: 1px solid var(--color-border-light);
 }
 
 .section-header {
@@ -198,6 +199,32 @@
     border-top: 1px solid var(--color-border-light);
 }
 
+.bio-section {
+    position: relative;
+    background-color: #ffffff;
+    padding-block: var(--space-8);
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: var(--space-6);
+    align-items: stretch;
+}
+
+.experience-section {
+    position: relative;
+    background-color: #ffffff;
+    padding-block: var(--space-8);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+}
+
 .site-footer {
     background-color: #ffffff;
     border-top: 1px solid var(--color-border-light);
@@ -210,6 +237,14 @@
 @media (max-width: 60rem) {
     .perks-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
     }
 }
 

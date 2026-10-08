@@ -407,6 +407,219 @@
     color: #ffffff;
 }
 
+.bio-card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.bio-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    background-color: #f1f3f7;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+}
+
+.bio-headline {
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--color-text-main);
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.015em;
+}
+
+.bio-text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin-bottom: var(--space-4);
+}
+
+.bio-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    margin-top: auto;
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.bio-stat-item {
+    text-align: center;
+}
+
+.bio-stat-num {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-accent-amber);
+    line-height: 1.1;
+}
+
+.bio-stat-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.bio-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-5);
+}
+
+.bio-card-title i {
+    color: var(--color-accent-blue);
+    font-size: 1.25rem;
+}
+
+.bio-stack-group {
+    margin-bottom: var(--space-4);
+}
+
+.bio-stack-group:last-child {
+    margin-bottom: 0;
+}
+
+.bio-stack-label {
+    font-size: 0.825rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-main);
+    margin-bottom: var(--space-2);
+}
+
+.bio-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.bio-pill {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border-light);
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.bio-pill:hover {
+    background-color: #ffffff;
+    border-color: var(--color-accent-blue);
+}
+
+.experience-column-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.exp-icon-wrap {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-full);
+    background-color: #f1f3f7;
+    color: var(--color-text-main);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+}
+
+.experience-column-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+    letter-spacing: -0.01em;
+}
+
+.exp-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.exp-card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    transition: border-color var(--transition-fast);
+}
+
+.exp-card:hover {
+    border-color: #c4ccd8;
+}
+
+.exp-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-1);
+}
+
+.exp-role {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+
+.exp-badge {
+    font-size: 0.725rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    background-color: #f1f3f7;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+}
+
+.exp-badge-highlight {
+    background-color: #e8f0fe;
+    color: var(--color-accent-blue);
+}
+
+.exp-subtitle {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent-amber);
+    margin-bottom: var(--space-2);
+}
+
+.exp-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+}
+
 @media (max-width: 48rem) {
     .site-nav {
         display: none;
