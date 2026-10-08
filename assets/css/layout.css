@@ -1,0 +1,69 @@
+.container {
+    width: min(var(--container-max-width), calc(100% - 2 * var(--space-5)));
+    margin-inline: auto;
+}
+
+.container-narrow {
+    width: min(48rem, calc(100% - 2 * var(--space-5)));
+    margin-inline: auto;
+}
+
+.site-header {
+    position: relative;
+    z-index: 50;
+    background-color: var(--color-bg-light);
+    border-bottom: 1px solid rgba(20, 23, 31, 0.06);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--space-4);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.section {
+    position: relative;
+    padding-block: var(--space-8);
+}
+
+.section-dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+.curve-transition {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.curve-transition svg {
+    display: block;
+    width: 100%;
+    height: clamp(50px, 8vw, 110px);
+}
+
+.curve-to-dark {
+    margin-bottom: -3px;
+}
+
+.curve-to-light {
+    background-color: #ffffff;
+    margin-top: -3px;
+    margin-bottom: -2px;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,20 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Christian Oroh (repyh) - 10x Full Stack &amp; Systems Developer portfolio. Go Sobek runtime, Next.js, Electron Discord bots, dan simulasi matematis.">
+        <title>Christian Oroh (repyh) | 10x Dev Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/css/vars.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/components.css">
+        <link rel="stylesheet" href="assets/css/sections.css">
+        <script src="assets/js/navigation.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#home" aria-label="Christian Oroh Portfolio">
+                    <span class="brand-icon">{ }</span>
+                    <span>Chris O.</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+                    <a href="#why-me">Superioritas</a>
+                    <a href="#projects">Mahakarya</a>
+                    <a href="#reviews">Testimoni</a>
+                    <a href="#contact" class="btn-nav-cta">Rekrut Maha Jenius</a>
+                </nav>
+            </div>
+        </header>
 
-<body>
-    Jarvis tolong buatkan saya website portfolio.
-    <h1>Home</h1>
-    <p>About</p>
-    <p>Skills</p>
-    <p>Projects</p>
-    <p>Contact</p>
-</body>
+        <main id="main-content">
+            <section id="home" class="hero-section">
+                <!-- Decorative SVGs matching reference aesthetics -->
+                <svg class="doodle doodle-blob-orange" viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M30 10 C55 -5 85 15 88 40 C92 70 65 85 70 110 C74 128 50 135 35 125 C18 115 15 90 25 70 C32 52 10 25 30 10 Z" fill="#F27405" />
+                </svg>
 
+                <svg class="doodle doodle-spring" viewBox="0 0 160 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M10 70 C25 70 28 15 45 15 C60 15 40 70 55 70 C70 70 72 15 88 15 C102 15 82 70 98 70 C112 70 115 15 130 15 C145 15 132 70 150 70" stroke="#14171F" stroke-width="3" stroke-linecap="round" />
+                </svg>
+
+                <svg class="doodle doodle-bracket-blue" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M25 12 C45 12 55 30 55 50 C55 62 68 68 75 70 C68 72 55 78 55 90 C55 110 45 128 25 128" stroke="#2361FF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg class="doodle doodle-star-small" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0 C12 6.6 17.4 12 24 12 C17.4 12 12 17.4 12 24 C12 17.4 6.6 12 0 12 C6.6 12 12 6.6 12 0 Z" />
+                </svg>
+
+                <svg class="doodle doodle-star-mini" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0 C12 6.6 17.4 12 24 12 C17.4 12 12 17.4 12 24 C12 17.4 6.6 12 0 12 C6.6 12 12 6.6 12 0 Z" />
+                </svg>
+
+                <div class="container hero-content">
+                    <h1 class="hero-title">
+                        Christian Oroh yang bisa<br>
+                        <span class="badge-pill badge-pill-js">front end</span>
+                        <span class="badge-pill badge-pill-web">back end</span><br>
+                        <span class="badge-pill badge-pill-amber">yapping</span>
+                        <span class="badge-pill badge-pill-purple">pake AI</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Mahasiswa UPH &amp; self-proclaimed 10x Developer.
+                    </p>
+
+                    <div class="hero-traits-wrapper">
+                        <div class="trait-group">
+                            <span>Zero IPC Overhead</span>
+                            <span class="trait-dot">&bull;</span>
+                            <span>10x Velocity</span>
+                            <span class="trait-dot">&bull;</span>
+                            <span>Certified Yapper</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-wrapper">
+                        <a href="#projects" class="btn-pill btn-pill-primary">Lihat Mahakarya</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top transition curve into brief black ribbon -->
+            <div class="curve-transition curve-to-dark" aria-hidden="true">
+                <svg viewBox="0 0 1440 90" fill="none" preserveAspectRatio="none">
+                    <path d="M0 0 C480 85 960 85 1440 0 L1440 95 L0 95 Z" fill="#0A0C10" />
+                </svg>
+            </div>
+
+            <!-- Brief black ribbon with client & platform logos -->
+            <section class="brief-black-ribbon" aria-label="Platform and client integrations">
+                <div class="container">
+                    <div class="ribbon-marquee-flex">
+                        <div class="ribbon-marquee-item"><i class="bi bi-cpu"></i> Go Sobek</div>
+                        <div class="ribbon-marquee-item"><i class="bi bi-filetype-tsx"></i> TypeScript</div>
+                        <div class="ribbon-marquee-item"><i class="bi bi-window-sidebar"></i> Electron</div>
+                        <div class="ribbon-marquee-item"><i class="bi bi-discord"></i> Discord Verified</div>
+                        <div class="ribbon-marquee-item"><i class="bi bi-building"></i> BEM UPH</div>
+                        <div class="ribbon-marquee-item"><i class="bi bi-robot"></i> Cursor AI</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom transition curve into pure white background -->
+            <div class="curve-transition curve-to-light" aria-hidden="true">
+                <svg viewBox="0 0 1440 90" fill="none" preserveAspectRatio="none">
+                    <path d="M0 -5 L1440 -5 L1440 0 C960 85 480 85 0 0 Z" fill="#0A0C10" />
+                </svg>
+            </div>
+
+            <!-- Why Work With Me Section (White background) -->
+            <section id="why-me" class="white-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Kenapa Harus Christian Oroh?</h2>
+                        <p class="section-desc">
+                            Standar saya terlalu tinggi untuk membiarkan proyek Anda disentuh developer medioker. Nih buktinya:
+                        </p>
+                    </div>
+
+                    <div class="perks-grid">
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-currency-dollar"></i></div>
+                            <h3 class="perk-title">Tarif Sesuai Kasta Ego</h3>
+                            <p class="perk-description">Flat rate transparan. Anda bayar arsitektur kelas atas yang dijamin tidak akan bikin tech lead Anda nangis di production.</p>
+                        </div>
+
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-lightning-charge"></i></div>
+                            <h3 class="perk-title">Turnaround Tak Masuk Akal</h3>
+                            <p class="perk-description">Fitur Anda beres sebelum sprint meeting dimulai. Kalau ada delay, berarti PRD Anda yang kurang matang.</p>
+                        </div>
+
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-shield-check"></i></div>
+                            <h3 class="perk-title">Anti Dependency Bloat</h3>
+                            <p class="perk-description">Dari embedded runtime Sobek sampai kalkulus Riemann sum. Buat apa install 80 npm package kalau otak saya sanggup nulis vanilla?</p>
+                        </div>
+
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-chat-quote"></i></div>
+                            <h3 class="perk-title">Yapping Berbobot Tinggi</h3>
+                            <p class="perk-description">Siap debat filosofis 4 jam kenapa arsitektur sistem saya lebih superior dibanding tutorial YouTube yang tim Anda jadikan kiblat.</p>
+                        </div>
+
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-patch-check"></i></div>
+                            <h3 class="perk-title">Early Verified Pedigree</h3>
+                            <p class="perk-description">Verified Bot Developer Discord sejak 2021. Sudah handle ribuan server aktif waktu Anda masih bingung cara setting webhook.</p>
+                        </div>
+
+                        <div class="perk-card">
+                            <div class="perk-icon-wrap"><i class="bi bi-signpost-split"></i></div>
+                            <h3 class="perk-title">Kediktatoran End-to-End</h3>
+                            <p class="perk-description">Dari Figma, multimedia audio-visual, backend Go, sampai deploy production. Anda cukup transfer dan terima beres.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Showcase Section (Flexbox Layout on White Background) -->
+            <section id="projects" class="projects-showcase-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Koleksi Mahakarya Terpilih</h2>
+                        <p class="section-desc">
+                            Bukti konkret bahwa yapping saya di internet didukung oleh kode produksi berkelas dunia:
+                        </p>
+                    </div>
+
+                    <div class="projects-flex-container">
+                        <!-- Project Card 1: Lab 02 -->
+                        <article class="project-card-light">
+                            <div class="project-card-header">
+                                <span class="project-badge">Lab 02</span>
+                                <a href="lab/lab02/index.html" class="project-action-btn" aria-label="Buka Lab 02: Earth & Exploration">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <h3 class="project-name">Lab 02: Earth &amp; Planetary Exploration</h3>
+                            <p class="project-description">
+                                Eksplorasi elemen semantik HTML dasar: integrasi video player Bumi lokal, formatting tabel komparasi radius &amp; temperatur planet tata surya, dan struktur fakta sains terkurasi.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">Semantics</span>
+                                <span class="project-tag">Data Tables</span>
+                                <span class="project-tag">Multimedia</span>
+                            </div>
+                        </article>
+
+                        <!-- Project Card 2: Lab 05 (magic-box) -->
+                        <article class="project-card-light">
+                            <div class="project-card-header">
+                                <span class="project-badge">Lab 05</span>
+                                <a href="lab/magic-box/index.html" class="project-action-btn" aria-label="Buka Lab 05: 3D Magic Boxes">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <h3 class="project-name">Lab 05: 3D Magic Boxes</h3>
+                            <p class="project-description">
+                                Eksperimen interaktif CSS 3D transforms dan manipulasi DOM JavaScript dinamis. Memecah background visual menjadi matriks kubus 3D beranimasi hanya dengan satu tombol interaksi.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">CSS 3D</span>
+                                <span class="project-tag">Vanilla JS</span>
+                                <span class="project-tag">Keyframe Animations</span>
+                                <span class="project-tag">DOM Manipulation</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="projects-action-row">
+                        <a href="https://github.com/repyh" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-dark">
+                            <span>Jelajahi GitHub repyh</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section ("Kata Pengagum") -->
+            <section id="reviews" class="reviews-section">
+                <div class="container">
+                    <div class="reviews-header-row">
+                        <div>
+                            <h2 class="section-title">Kata Mereka yang Beruntung Kolaborasi</h2>
+                            <p class="section-desc">Testimoni nyata dari rekan dan klien yang pernah menyaksikan kehebatan saya:</p>
+                        </div>
+                        <div class="carousel-nav" aria-label="Review navigation">
+                            <button type="button" class="carousel-arrow" id="review-prev-btn" aria-label="Review sebelumnya">
+                                <i class="bi bi-arrow-left"></i>
+                            </button>
+                            <button type="button" class="carousel-arrow" id="review-next-btn" aria-label="Review selanjutnya">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="review-card" id="review-display">
+                        <blockquote class="review-quote" id="review-quote-text">
+                            &ldquo;Belajar game dev aja lah ti, biar aku ga ada saingan di web&rdquo;
+                        </blockquote>
+                        <div class="review-author">
+                            <div class="review-avatar" id="review-avatar-text">B</div>
+                            <div>
+                                <div class="review-author-name" id="review-author-name">B. Simamora</div>
+                                <div class="review-author-role" id="review-author-role">Partisipan Gemastik CTF 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="container container-narrow">
+                    <h2 class="section-title">Tertarik Mempekerjakan Sang Maestro?</h2>
+                    <p class="section-desc" style="margin-bottom: var(--space-6);">
+                        Tersedia untuk kontrak freelance, konsultasi arsitektur, atau project berbobot sebelum kalender saya penuh dengan kepanitiaan.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+                        <a href="mailto:christianoroh9@outlook.com" class="btn-pill btn-pill-primary">
+                            <span>Kirim Email ke Christian</span>
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christianoroh/" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-dark">
+                            <span>LinkedIn Profile</span>
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; <span data-current-year>2026</span> Christian Oroh (repyh) &bull; Dibuat untuk  memenuhi Lab Pemrograman Web.</p>
+            </div>
+        </footer>
+    </body>
 </html>
